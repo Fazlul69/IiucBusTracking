@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "833100111965",
+    "firebase_url": "https://iiucbustrackingapp.firebaseio.com",
+    "project_id": "iiucbustrackingapp",
+    "storage_bucket": "iiucbustrackingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833100111965:android:d27140ef1c5f5d95",
+        "android_client_info": {
+          "package_name": "com.example.fazlulhoque.iiucbustracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833100111965-5m2agps7pql1e66r7mpt5vnntfdk1pqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fazlulhoque.iiucbustracking",
+            "certificate_hash": "e890aa4d3bfc5b33dd91792be8be0662f81e6278"
+          }
+        },
+        {
+          "client_id": "833100111965-u2n87dpvbih2ejf1b5konq50hur7apc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcCPSFmlfPXrjeHC7ZyyRMBT9JnWwwqzo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833100111965-u2n87dpvbih2ejf1b5konq50hur7apc9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

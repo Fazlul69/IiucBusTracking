@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnDrive" type="id">btnDrive</item>
+    <item name="btnStudent" type="id">btnStudent</item>
+    <item name="btnAdmin" type="id">btnAdmin</item>
+    <item name="eBusId" type="id">eBusId</item>
+    <item name="eloginId" type="id">eLoginId</item>
+</resources>
