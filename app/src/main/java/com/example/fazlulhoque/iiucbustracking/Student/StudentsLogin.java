@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.example.fazlulhoque.iiucbustracking.R;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -22,6 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.rengwuxian.materialedittext.MaterialEditText;
+
+import retrofit2.http.Url;
 
 public class StudentsLogin extends AppCompatActivity {
 
@@ -37,6 +40,8 @@ public class StudentsLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_students_login);
+
+        String url="gs://iiucbustrackingapp.appspot.com/studentData.json";
         mAuth = FirebaseAuth.getInstance();
         sdb = FirebaseDatabase.getInstance();
         studentUsers = sdb.getReference("StudentUsers");
@@ -91,6 +96,10 @@ public class StudentsLogin extends AppCompatActivity {
                     return;
                 }
 
+                if (TextUtils.isEmpty(edtMail.getText().toString())) {
+                    Snackbar.make(rootLayout, "Please enter email address", Snackbar.LENGTH_SHORT).show();
+                    return;
+                }
 
                 if (TextUtils.isEmpty(edtPassword.getText().toString())) {
                     Snackbar.make(rootLayout, "Please enter password", Snackbar.LENGTH_SHORT).show();

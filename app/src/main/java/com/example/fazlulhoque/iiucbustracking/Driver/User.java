@@ -4,16 +4,17 @@ package com.example.fazlulhoque.iiucbustracking.Driver;
  * Created by Fazlul Hoque on 12/6/2017.
  */
  class User {
-    private String email,password,name,phone;
+    private String email,password,name,phone,id;
 
     User(){
     }
 
-    public User(String email, String password, String name, String phone) {
+    public User(String email, String password, String name, String phone, String id) {
         this.email = email;
         this.password = password;
         this.name = name;
         this.phone = phone;
+        this.id=id;
     }
 
     public String getEmail() {
@@ -32,6 +33,14 @@ package com.example.fazlulhoque.iiucbustracking.Driver;
         this.password = password;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -47,4 +56,6 @@ package com.example.fazlulhoque.iiucbustracking.Driver;
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
 }

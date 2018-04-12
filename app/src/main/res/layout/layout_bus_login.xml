@@ -29,6 +29,21 @@
             app:met_primaryColor="@color/colorPrimary"
             app:met_singleLineEllipsis="true"
             tools:ignore="HardcodedText" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtId"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:hint=" ID"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="20sp"
+
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            tools:ignore="HardcodedText" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edtPassword"

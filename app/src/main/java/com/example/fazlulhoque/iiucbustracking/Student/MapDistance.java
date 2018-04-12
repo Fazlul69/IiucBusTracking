@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.directions.route.RouteException;
 import com.example.fazlulhoque.iiucbustracking.Modules.DirectionFinder;
 import com.example.fazlulhoque.iiucbustracking.Modules.DirectionFinderListener;
 import com.example.fazlulhoque.iiucbustracking.Modules.Route;
@@ -34,7 +35,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapDistance extends FragmentActivity implements OnMapReadyCallback, DirectionFinderListener {
+public abstract class MapDistance extends FragmentActivity implements OnMapReadyCallback, DirectionFinderListener {
 
     private GoogleMap mMap;
     private Button btnFindPath;
@@ -48,7 +49,8 @@ public class MapDistance extends FragmentActivity implements OnMapReadyCallback,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map_distance); SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        setContentView(R.layout.activity_map_distance);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
@@ -164,4 +166,6 @@ public class MapDistance extends FragmentActivity implements OnMapReadyCallback,
             polylinePaths.add(mMap.addPolyline(polylineOptions));
         }
     }
+
+
 }

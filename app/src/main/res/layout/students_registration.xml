@@ -30,6 +30,7 @@
             app:met_singleLineEllipsis="true"
             tools:ignore="HardcodedText" />
 
+
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edtPassword"
             android:layout_width="351dp"

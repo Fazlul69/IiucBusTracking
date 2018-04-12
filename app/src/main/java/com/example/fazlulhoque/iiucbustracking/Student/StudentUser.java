@@ -5,15 +5,23 @@ package com.example.fazlulhoque.iiucbustracking.Student;
  */
 
 public class StudentUser {
-    private String email,password,name,phone;
+    private String email,password,name,phone,Id;
 
     StudentUser(){
     }
 
-    public StudentUser(String email, String password) {
+    public StudentUser(String email, String password,String Id) {
         this.email = email;
         this.password = password;
+        this.Id=Id;
+    }
 
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
     }
 
     public String getEmail() {

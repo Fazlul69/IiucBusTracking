@@ -52,7 +52,8 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".Student.MapDistance" />
         <activity android:name=".Driver.GenderActivity" />
-        <activity android:name=".Student.StudentType"></activity>
+        <activity android:name=".Student.StudentType" />
+        <activity android:name=".Student.MapDistance2"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,9 @@ package com.example.fazlulhoque.iiucbustracking.Modules;
 
      //   import com.google.android.gms.maps.model.LatLng;
 
+import com.directions.route.RouteException;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,4 +18,12 @@ import java.util.List;
 public interface DirectionFinderListener {
     void onDirectionFinderStart();
     void onDirectionFinderSuccess(List<Route> route);
+
+    void onRoutingFailure(RouteException e);
+
+    void onRoutingStart();
+
+    void onRoutingSuccess(ArrayList<Route> route, int shortestRouteIndex);
+
+    void onRoutingCancelled();
 }
